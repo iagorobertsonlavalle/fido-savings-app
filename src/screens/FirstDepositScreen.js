@@ -66,7 +66,7 @@ export default function FirstDepositScreen({ navigation }) {
             <View style={s.highlights}>
               <HighlightRow icon="📈" text="10% interest per year — credited daily" />
               <HighlightRow icon="🔓" text="Withdraw to MoMo anytime" />
-              <HighlightRow icon="📶" text="USSD backup if data is down" />
+              <HighlightRow icon="💬" text="24/7 support via call, chat, or email" />
             </View>
             <TouchableOpacity style={s.primaryBtn} onPress={next}>
               <Text style={s.primaryBtnText}>Get started</Text>
@@ -87,7 +87,7 @@ export default function FirstDepositScreen({ navigation }) {
             </Text>
             <View style={s.trustCard}>
               <TrustPoint icon="✅" title="Withdraw anytime" body="Move to MoMo in minutes, even nights and weekends." />
-              <TrustPoint icon="📶" title="USSD backup" body="If data is down, dial *713# to withdraw." />
+              <TrustPoint icon="💬" title="Support always available" body="Call 0800-FIDO-1 or chat in-app, any time of day." />
               <TrustPoint icon="🏦" title="Fido-held" body="Savings are held by Fido, licensed in Ghana." />
               <TrustPoint icon="💬" title="Support always available" body="In-app chat or call 0800-FIDO-1 anytime." />
             </View>

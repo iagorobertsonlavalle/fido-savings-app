@@ -37,7 +37,7 @@ const JOURNEYS = [
   { id: 'SharedSusu',       emoji: '👥', title: 'Shared Susu',                subtitle: 'Save together toward a shared goal',        badge: 'New' },
   { id: 'LoanLinked',       emoji: '🔗', title: 'Loan-Linked Savings',        subtitle: 'Build your Fido profile as you save',       badge: null },
   { id: 'Dashboard',        emoji: '📊', title: 'Financial Health Dashboard', subtitle: 'Track spending, saving & interest',         badge: null },
-  { id: 'OfflineSavings',   emoji: '📡', title: 'USSD Withdrawal Backup',     subtitle: 'Access your money even without data',       badge: null },
+  { id: 'OfflineSavings',   emoji: '💬', title: 'Help & Support',              subtitle: 'Contact us anytime, day or night',          badge: null },
 ];
 
 // ─── Components ───────────────────────────────────────────────────────────────
@@ -63,7 +63,7 @@ function TrustChip() {
   return (
     <View style={s.trustChip}>
       <View style={s.trustChipDot} />
-      <Text style={s.trustChipText}>Withdraw anytime · USSD backup available</Text>
+      <Text style={s.trustChipText}>Withdraw anytime · Support available 24/7</Text>
     </View>
   );
 }
@@ -238,7 +238,7 @@ function TrustSupportCard() {
       <View style={{ flex: 1 }}>
         <Text style={s.trustCardTitle}>Need your money?</Text>
         <Text style={s.trustCardText}>
-          Withdraw to MoMo anytime. If data is down, use USSD backup.
+          Withdraw to MoMo anytime. Support is available 24/7 if you need help.
         </Text>
       </View>
     </View>

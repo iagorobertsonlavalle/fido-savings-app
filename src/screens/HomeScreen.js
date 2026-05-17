@@ -68,7 +68,7 @@ function TrustChip() {
   );
 }
 
-function SavingsHeroCard({ onAddMoney, onWithdraw }) {
+function SavingsHeroCard({ onAddMoney, onWithdraw, onCalculate }) {
   return (
     <View style={s.heroCard}>
       <Text style={s.heroLabel}>Total Savings</Text>
@@ -110,6 +110,9 @@ function SavingsHeroCard({ onAddMoney, onWithdraw }) {
           <Text style={s.heroWithdrawBtnText}>Withdraw</Text>
         </TouchableOpacity>
       </View>
+      <TouchableOpacity style={s.heroCalcBtn} onPress={onCalculate}>
+        <Text style={s.heroCalcBtnText}>📊  How much should I save?</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -289,6 +292,7 @@ export default function HomeScreen({ navigation }) {
         <SavingsHeroCard
           onAddMoney={() => nav('FirstDeposit')}
           onWithdraw={() => nav('OfflineSavings')}
+          onCalculate={() => nav('SavingsCalculator')}
         />
 
         <SmartRecommendationCard onPress={() => nav('MoMoOverflow')} />
@@ -367,6 +371,8 @@ const s = StyleSheet.create({
   heroAddBtnText:     { color: colors.primary, fontWeight: '700', fontSize: 14 },
   heroWithdrawBtn:    { flex: 1, borderWidth: 1.5, borderColor: 'rgba(255,255,255,0.6)', borderRadius: 20, paddingVertical: 12, alignItems: 'center' },
   heroWithdrawBtnText:{ color: colors.white, fontWeight: '600', fontSize: 14 },
+  heroCalcBtn:        { alignItems: 'center', paddingTop: 12, paddingBottom: 2 },
+  heroCalcBtnText:    { fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: '600' },
 
   // Rec card
   recCard:    { backgroundColor: colors.white, borderRadius: 18, padding: 16, marginBottom: 12, flexDirection: 'row', alignItems: 'flex-start', shadowColor: '#000', shadowOpacity: 0.05, shadowRadius: 8, elevation: 2, borderLeftWidth: 4, borderLeftColor: colors.primary },

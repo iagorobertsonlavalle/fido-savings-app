@@ -13,6 +13,7 @@ import TrustedProgressScreen from '../screens/TrustedProgressScreen';
 import SharedSusuScreen from '../screens/SharedSusuScreen';
 import LoanLinkedScreen from '../screens/LoanLinkedScreen';
 import OfflineSavingsScreen from '../screens/OfflineSavingsScreen';
+import SavingsCalculatorScreen from '../screens/SavingsCalculatorScreen';
 import FidoScoreScreen from '../screens/FidoScoreScreen';
 import FamilyViewScreen from '../screens/FamilyViewScreen';
 
@@ -35,6 +36,7 @@ export default function AppNavigator() {
         <Stack.Screen name="OfflineSavings" component={OfflineSavingsScreen} />
         <Stack.Screen name="FidoScore" component={FidoScoreScreen} />
         <Stack.Screen name="FamilyView" component={FamilyViewScreen} />
+        <Stack.Screen name="SavingsCalculator" component={SavingsCalculatorScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
